@@ -1,0 +1,95 @@
+@import '../../styles/design-tokens.scss';
+
+.form {
+  display: grid;
+  grid-template-columns: [start] 1fr 1fr [end];
+  grid-template-rows: [top] 55 120 105 auto [bottom];
+  column-gap: 60px;
+
+  @media (max-width: 540px) {
+    grid-template-columns: [start] 1fr [end];
+
+    column-gap: initial;
+  }
+}
+
+.title {
+  margin-bottom: 34px;
+  grid-column-start: start;
+  grid-column-end: end;
+}
+.label {
+  display: block;
+
+  margin-bottom: 1.125rem;
+
+  font-family: Lora, serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 100%;
+
+  @media (max-width: 770px) {
+    margin-bottom: 0.9rem;
+  }
+  @media (max-width: 540px) {
+    margin-bottom: 0.8rem;
+  }
+}
+
+.input {
+  width: 100%;
+  height: 2.5rem;
+  padding-bottom: 0.5rem;
+
+  border-bottom: 2px solid $middle-blue;
+
+  font-size: 1.5rem;
+
+  &:focus {
+    outline-style: dotted;
+    outline-color: $light-blue;
+  }
+
+  @media (max-width: 770px) {
+    height: 2.2rem;
+    padding-bottom: 0.4rem;
+
+    font-size: 1.25rem;
+  }
+  @media (max-width: 540px) {
+    height: 2rem;
+    padding-bottom: 0.2rem;
+
+    font-size: 1rem;
+  }
+}
+.text {
+  grid-column: start / end;
+
+  height: 100%;
+  // margin-top: 55px;
+
+  .input {
+    resize: vertical;
+  }
+}
+
+.block {
+  display: flex;
+}
+
+.submit {
+  margin-top: 44px;
+  justify-self: start;
+}
+
+.inputContainer {
+  margin-bottom: 55px;
+  @media (max-width: 540px) {
+    margin-bottom: 25px;
+  }
+}
+
+.formError {
+  font-size: 0.9rem;
+}

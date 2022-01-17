@@ -1,0 +1,43 @@
+.wrapper {
+  position: relative;
+
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media (max-width: 1200px) {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+.minH100 {
+  min-height: 100%;
+}
+
+.formTitle {
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+
+  font-size: 0.825rem;
+  line-height: 1.325rem;
+}
+
+.error {
+  color: $red;
+}
+
+.center {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  display: flex;
+  overflow: auto;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}

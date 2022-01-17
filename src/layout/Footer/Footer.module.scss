@@ -1,0 +1,52 @@
+.footer {
+  position: relative;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  min-height: 0;
+  margin-top: auto;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.hidingBlock {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  height: 170px;
+
+  pointer-events: none;
+
+  background: linear-gradient(
+    180deg,
+    rgba(30, 37, 44, 0) 0%,
+    rgba(30, 37, 44, 1) 60%
+  );
+
+  @media (max-width: 540px) {
+    height: 130px;
+  }
+  @media (max-width: 770px) {
+    height: 160px;
+  }
+}
+
+.primary {
+  background: linear-gradient(
+    180deg,
+    rgba(30, 37, 44, 0) 0%,
+    rgba(30, 37, 44, 1) 60%
+  );
+}
+.white {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 60%
+  );
+}

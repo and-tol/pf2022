@@ -1,0 +1,23 @@
+.main {
+  position: relative;
+
+  flex-grow: 1;
+
+  @media (max-width: 770px) {
+    padding-bottom: 150px;
+  }
+  @media (max-width: 540px) {
+    padding-bottom: 110px;
+  }
+}
+
+.contentContainer {
+  position: relative;
+
+  display: flex;
+
+  overflow: hidden;
+  flex-direction: column;
+
+  min-height: 100vh;
+}

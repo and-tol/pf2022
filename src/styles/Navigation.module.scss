@@ -1,0 +1,47 @@
+@import './design-tokens.scss';
+
+$margin-right: 1rem;
+
+.nav {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+}
+
+.navItem {
+  margin-right: $margin-right;
+
+  cursor: pointer;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: $white;
+
+  font-size: 0.75rem;
+  line-height: 1rem;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+.active {
+  color: $orange !important;
+
+  &:hover {
+    color: $orange-light;
+  }
+}
+
+.dots {
+  margin-right: $margin-right;
+  margin-bottom: 2px;
+}
+
+.secondColor {
+  color: $dark-blue;
+  fill: $dark-blue;
+}

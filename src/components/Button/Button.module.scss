@@ -1,0 +1,50 @@
+@import '../../styles/design-tokens.scss';
+
+.button {
+  display: inline-block;
+
+  padding: 0.5rem 1.75rem;
+
+  cursor: pointer;
+
+  text-align: center;
+
+  letter-spacing: 0.05em;
+
+  border: none;
+  border-radius: 2rem;
+
+  font-size: 0.8rem;
+
+  font-weight: 600;
+  line-height: 1.1875rem;
+}
+
+.primary {
+  transition: all 0.3s ease;
+
+  color: $light-blue;
+  border: 2px solid $middle-blue;
+  background-color: $middle-blue;
+  &:hover {
+    transition: all 0.3s ease;
+
+    color: $white;
+    background-color: $dark-blue;
+  }
+}
+
+.ghost {
+  transition: all 0.3s ease;
+
+  color: $turquoise;
+  border: 2px solid $turquoise;
+  background-color: transparent;
+
+  &:hover {
+    transition: all 0.3s ease;
+
+    color: $white;
+    background-color: $turquoise;
+  }
+}

@@ -1,0 +1,87 @@
+@import '../../styles/design-tokens.scss';
+
+.section {
+  padding-top: 40px;
+}
+
+.content {
+  display: flex;
+}
+
+.image {
+  position: relative;
+
+  flex-basis: 450px;
+
+  min-width: 450px;
+  // height: 1800px;
+  height: auto;
+}
+
+.img {
+  width: 100px;
+}
+
+// ------
+
+.text {
+  padding-left: 4.9vw;
+}
+
+.titleContainer {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.title {
+  position: relative;
+
+  letter-spacing: 0.02em;
+
+  color: $orange;
+
+  font-family: Lora, serif;
+  font-size: 3rem;
+  line-height: 100%;
+}
+.lineDots {
+  position: absolute;
+  top: 25px;
+  left: -152px;
+}
+
+$tag-mb: 0.7rem;
+
+.tagsContainer {
+  margin-bottom: -$tag-mb;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 0.7rem;
+  margin-bottom: $tag-mb;
+  padding: 0.5rem 1.1rem;
+
+  /* identical to box height, or 211% */
+
+  text-align: center;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+
+  color: $white;
+  border-radius: 20px;
+  background-color: $red;
+
+  font-size: 0.6rem;
+
+  font-weight: 600;
+  line-height: 1.125rem;
+}

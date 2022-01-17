@@ -1,0 +1,8 @@
+{
+  "h1": "Простой образец",
+  "change-locale": "Сменить локаль",
+  "to-second-page": "Вторая страница",
+  "error-with-status": "Ошибка сервера {{statusCode}} ",
+  "error-without-status": "Ошибка сервера",
+  "title": "Home | next-i18next"
+}

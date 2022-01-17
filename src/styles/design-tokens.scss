@@ -1,0 +1,49 @@
+$font-default: lato;
+$font-stack: $font-default, 'Noto Serif Display', lora;
+
+$font-size: 1rem;
+$font-size-2: 1.35rem;
+$font-size-3: 1.5rem;
+
+$dark-blue: #1E252C;
+$light-blue: #A6C6E5;
+$orange: #D67419;
+$orange-light: #E0A974;
+$red: #C6333D;
+$white: #FFF;
+$turquoise: #0C9C9D;
+$middle-blue: #205A7B;
+
+.bg-primary {
+  background: $dark-blue;
+}
+.bg-secondary {
+  background: $white;
+}
+.bg-accent-color {
+  background: $red;
+}
+
+.font-primary-color {
+  color: $light-blue;
+}
+.font-secondary-color {
+  color: $middle-blue;
+}
+.font-third-color {
+  color: $white;
+}
+
+.font-accent {
+  color: $orange;
+}
+
+.pb-1 {
+  padding-bottom: 2.5rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-1 {
+  margin-top: 1.5rem;
+}

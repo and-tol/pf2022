@@ -1,0 +1,82 @@
+@import '../../styles/design-tokens.scss';
+
+.pageContacts {
+  top: 50vh;
+
+  transform: translateY(-76%);
+
+  @media (max-width: 770px) {
+    top: initial;
+
+    transform: none;
+  }
+}
+
+.section {
+  display: flex;
+
+  padding-top: 205px;
+
+  @media (max-width: 770px) {
+    flex-direction: column;
+
+    padding-top: 5vw;
+  }
+}
+
+.info {
+  flex-basis: 468px;
+
+  @media (max-width: 770px) {
+    flex-basis: initial;
+
+    margin-bottom: 10vw;
+  }
+}
+
+.infoTitle {
+  // text-shadow: -1px 0 $middle-blue, 0 1px $middle-blue, 1px 0 $middle-blue, 0 -1px $middle-blue;
+
+  margin-bottom: 1.35rem;
+
+  color: $white;
+
+  font-family: Lora, serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 100%;
+
+  -webkit-text-stroke: 1px $middle-blue;
+
+  @media (max-width: 770px) {
+    margin-bottom: 1vw;
+  }
+  @media (max-width: 540px) {
+    font-size: 3rem;
+  }
+}
+
+.contacts {
+  flex-grow: 1;
+}
+
+.socialsContainer {
+  margin-top: 74px;
+}
+.socialsTitle {
+  margin-bottom: 18px;
+}
+
+.icon {
+  display: inline-block;
+
+  margin-right: 1.75rem;
+
+  transition: color 0.4s ease;
+
+  &:hover {
+    transition: color 0.4s ease;
+
+    color: $orange;
+  }
+}
